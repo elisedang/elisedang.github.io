@@ -2,12 +2,16 @@
 
 h1
 {
+	font-family: 'Roboto', sans-serif;
+	/*font-weight: bold;*/
 	font-size: 2.5em;
 	margin-bottom: 0;
 }
 
 h2
 {
+	font-family: 'Roboto', sans-serif;
+	/*font-weight: bold;*/
 	text-align: center;
 	font-size: 2em;
 }
@@ -15,7 +19,6 @@ h2
 body
 {
 	/*font-family: 'Lato', sans-serif;*/
-	/*font-family: 'Open Sans', sans-serif;*/
 	/*font-family: 'Roboto', sans-serif;*/
 	font-family: 'Raleway', sans-serif;
 	color: #444;
@@ -67,6 +70,11 @@ b
 {
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+.home-section h1
+{
+	font-size: 3em;
 }
 
 .contact-section
@@ -192,6 +200,7 @@ textarea
 .blue
 {
   background: #00a3da;
+	/*27c1a3*/
 	color: #FFFFFF;
 }
 
