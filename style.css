@@ -25,6 +25,11 @@ body
 	font-size: 2em;
 }
 
+body:after{
+ display:none;
+ content: url(elise-dang-studio-ghibli-grad-cap.png);
+}
+
 b
 {
 	color: #00a3da;
@@ -42,7 +47,6 @@ b
 	text-decoration: underline;
 	font-weight: none;
 }
-
 
 .navbar
 {
