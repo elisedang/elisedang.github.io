@@ -158,23 +158,6 @@ textarea
 	display: none;
 }
 
-/*.fullScreen
-{
-	height: 100%;
-  width: 100%;
-	background-color: #FFFFFF;
-	background-attachment: scroll, fixed;
-  background: url('elise-dang-chicago.jpg'); no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-	text-align: center;
-	vertical-align: middle;
-	position: relative;
-}*/
-
-
 .scroll-past
 {
 	visibility: hidden;
