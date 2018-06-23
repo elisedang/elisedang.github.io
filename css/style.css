@@ -1,55 +1,51 @@
 /* ===== Elise's CSS ===== */
 
-h1
-{
-	font-family: 'Roboto', sans-serif;
+h1 {
+	/* font-family: 'Roboto', sans-serif; */
+	font-family: 'Inconsolata', monospace;
 	/*font-weight: bold;*/
 	font-size: 2.5em;
 	margin-bottom: 0;
 }
 
-h2
-{
-	font-family: 'Roboto', sans-serif;
+h2 {
+	/* font-family: 'Roboto', sans-serif; */
+	font-family: 'Inconsolata', monospace;
 	/*font-weight: bold;*/
 	text-align: center;
 	font-size: 2em;
 }
 
-body
-{
+body {
 	/*font-family: 'Lato', sans-serif;*/
 	/*font-family: 'Roboto', sans-serif;*/
-	font-family: 'Raleway', sans-serif;
+	/* font-family: 'Raleway', sans-serif; */
+	font-family: 'Quicksand', sans-serif;
 	color: #444;
 	font-size: 2em;
 }
 
-body:after{
+body:after {
  display:none;
  content: url(elise-dang-studio-ghibli-grad-cap.png) url(elise-dang-photo-portrait-grad.png) url(elise-dang-photo-girlswhocode-aligned.png) url(elise-dang-photo-coder-hackathon.png);
 }
 
-b
-{
+b {
 	color: #00a3da;
 }
 
-.white a
-{
+.white a {
 	color: #444; /* #707070; */
 	text-decoration: none;
 }
 
-.white a:hover, .white a:active, .white a:focus
-{
+.white a:hover, .white a:active, .white a:focus {
 	color: #1cc9f2;
 	text-decoration: underline;
 	font-weight: none;
 }
 
-.navbar
-{
+.navbar {
 	background-color: #00a3da;
 	opacity: 1;
 	text-align: center;
@@ -57,123 +53,102 @@ b
 	min-height:35px !important;
 }
 
-.navbar ul
-{
+.navbar ul {
 	display: inline-block;
 	float: none;
 	vertical-align: top;
 	text-transform: uppercase;
 }
 
-.navbar li
-{
+.navbar li {
 	padding-top: 5px;
 }
 
-.home-section
-{
+.home-section {
 	margin-top: 30px;
 	padding-bottom: 10px;
 }
 
-.home-section h1
-{
+.home-section h1 {
 	font-size: 3em;
 }
 
-.contact-section
-{
+.contact-section {
 	padding-bottom: 30px;
 }
 
-.who-i-am-section
-{
+.who-i-am-section {
 	padding-bottom: 30px;
 	/*font-size: 1.5em;*/
 }
 
-.img-responsive
-{
+.img-responsive {
 	margin-top: 35px;
 }
 
-.jumbotron
-{
+.jumbotron {
 	background-color: white;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
-.open .dropdown-toggle.btn-primary
-{
+.open .dropdown-toggle.btn-primary {
   background-color: #a9cbdb;
   border-color: #a9cbdb;
 }
 
-.btn
-{
+.btn {
   background-color: #00a3da;
 	color: #FFFFFF;
 }
 
-.btn:hover
-{
+.btn:hover {
   background-color: #1cc9f2;
 }
 
 .btn:hover,
 .btn:focus,
-.btn.focus
-{
+.btn.focus {
   color: #FFFFFF !important;
 }
 
-textarea
-{
+textarea {
 	resize: none;
 }
 
-.form-control:focus
-{
+.form-control:focus {
 	border-color: #00a3da;
 	box-shadow: none;
 	-webkit-box-shadow: none;
 }
 
-.has-error .form-control:focus
-{
+.has-error .form-control:focus {
 	box-shadow: none;
 	-webkit-box-shadow: none;
 }
 
-.social-icon
-{
+.social-icon {
 	font-size: 1.75em;
 	margin-bottom: 0;
 }
 
-.hidden
-{
+.hidden {
 	display: none;
 }
 
-.scroll-past
-{
+.scroll-past {
 	visibility: hidden;
 }
 
-.purple
-{
+.purple {
 	background: #b591b7;
 	color: #FFFFFF;
 }
 
-.purple a
-{
+.purple a {
   color: #FFFFFF;
 }
 
-.purple a:hover, .purple a:active, .purple a:focus
-{
+.purple a:hover, .purple a:active, .purple a:focus {
 	color: #d1aed3;
 	/*#1cc9f2*/
 	/*#d1aed3;*/
@@ -181,70 +156,59 @@ textarea
 }
 
 
-.blue
-{
+.blue {
   background: #00a3da;
 	/*27c1a3*/
 	color: #FFFFFF;
 }
 
-section#who-i-am .caption
-{
+section#who-i-am .caption {
   color: #FFFFFF;
 	/*text-align: center;*/
 }
 
-.blue h2
-{
+.blue h2 {
   color: #FFFFFF;
 }
 
-.blue b
-{
+.blue b {
   color: #a4eeff;
 }
 
-.blue a
-{
+.blue a {
   color: #FFFFFF;
 }
 
-.blue a:hover, .blue a:active, .blue a:focus
-{
+.blue a:hover, .blue a:active, .blue a:focus {
 	color: #bdf1ff;
 	text-decoration: none;
 }
 
 
-.dark-gray
-{
+.dark-gray {
   background: #444444;
 	color: #FFFFFF;
 }
 
 
-.dark-gray a
-{
+.dark-gray a {
   color: #FFFFFF;
 }
 
-.dark-gray a:hover, .dark-gray a:active, .dark-gray a:focus
-{
+.dark-gray a:hover, .dark-gray a:active, .dark-gray a:focus {
 	color: #bdf1ff;
 	text-decoration: none;
 }
 
 
-section#foot p
-{
+section#foot p {
 	padding-top: 10px;
 	margin-bottom: 0px;
 }
 
 /* extra-small */
 @media (max-width: 767px) {
-	.center-when-xs
-	{
+	.center-when-xs {
 		float: none;
 		display: block;
 		margin-left: auto;
@@ -254,8 +218,7 @@ section#foot p
 
 /* small */
 @media (max-width: 991px) {
-	.center-when-s
-	{
+	.center-when-s {
 		float: none;
 		display: block;
 	  margin-left: auto;
@@ -263,15 +226,13 @@ section#foot p
 	}
 }
 
-/*img.img-hover
-{
+/*img.img-hover {
 	-webkit-transition: margin 0.5s ease-out;
 	-moz-transition: margin 0.5s ease-out;
 	-o-transition: margin 0.5s ease-out;
 }
 
-img.img-hover:hover
-{
+img.img-hover:hover {
 	cursor:pointer;
 	margin-top: 5px;
 }*/
