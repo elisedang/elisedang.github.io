@@ -1,7 +1,6 @@
 // code inside will only run once the page DOM is ready for Javascript code to execute
 $(document).ready(function(){
    var offset = $(".navbar").offset().top;
-   console.log(offset);
 
    // scroll event is sent to window when the user scrolls to a different place in the window
    $(window).scroll(function() {
