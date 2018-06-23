@@ -22,7 +22,7 @@ $(document).ready(function(){
        var target = this.hash,
            $target = $(target);
 
-      var navbarHeightPixel = 35;
+      var navbarHeightPixel = 34;
       var targetOffset = $target.offset().top - navbarHeightPixel;
       // .animate(properties [, duration ] [, easing ] [, complete ] )
       // properties: an object of CSS properities and values that the animation will move toward

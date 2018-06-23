@@ -241,6 +241,27 @@ section#foot p
 	margin-bottom: 0px;
 }
 
+/* extra-small */
+@media (max-width: 767px) {
+	.center-when-xs
+	{
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* small */
+@media (max-width: 991px) {
+	.center-when-s
+	{
+		float: none;
+		display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+}
 
 /*img.img-hover
 {
