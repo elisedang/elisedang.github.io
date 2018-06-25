@@ -28,7 +28,8 @@ body {
 body:after {
  display:none;
  content: url(http://dangelise.com/images/elise-dang-studio-ghibli-grad-cap.png) url(http://dangelise.com/images/elise-dang-photo-portrait-grad.png)
- url(http://dangelise.com/images/elise-dang-photo-girlswhocode-aligned.png) url(http://dangelise.com/images/elise-dang-photo-coder-hackathon.png);
+ url(http://dangelise.com/images/elise-dang-photo-girlswhocode-aligned.png) url(http://dangelise.com/images/elise-dang-photo-coder-hackathon.png)
+ url(http://dangelise.com/images/elise-dang-photo-explorer-sanfran.png);
 }
 
 b {
