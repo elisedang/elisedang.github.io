@@ -28,17 +28,21 @@ body {
 body:after {
  display:none;
  content: url(http://dangelise.com/images/elise-dang-photo-portrait-grad.png)
+ url(http://dangelise.com/images/elise-dang-photo-portrait-snaphq.png)
 
   url(http://dangelise.com/images/elise-dang-photo-coder-hackathon.png)
+	url(http://dangelise.com/images/elise-dang-photo-coder-lahacks2017.png)
 	url(http://dangelise.com/images/elise-dang-photo-coder-gracehopper.png)
 
-	url(http://dangelise.com/images/elise-dang-photo-leader-girlswhocode-aligned.png)
-	url(http://dangelise.com/images/elise-dang-photo-leader-girlswhocode2-aligned.png)
+	url(http://dangelise.com/images/elise-dang-photo-leader-girlswhocode.png)
+	url(http://dangelise.com/images/elise-dang-photo-leader-icsday.png)
+	url(http://dangelise.com/images/elise-dang-photo-leader-girlswhocode2.png)
 
 	url(http://dangelise.com/images/elise-dang-photo-creator-studio-ghibli.png)
 	url(http://dangelise.com/images/elise-dang-creator-icssc-pokemon-ad.png)
 
 	url(http://dangelise.com/images/elise-dang-photo-explorer-vietnam.png)
+	url(http://dangelise.com/images/elise-dang-photo-explorer-grandcanyon.png)
 	url(http://dangelise.com/images/elise-dang-photo-explorer-sanfran.png);
 }
 

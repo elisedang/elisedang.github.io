@@ -39,11 +39,11 @@ $(document).ready(function(){
   });
 
   var eliseCounter = 0, coderCounter = 0, leaderCounter = 0, creatorCounter = 0, explorerCounter = 0,
-    eliseGallery = ["images/elise-dang-photo-portrait-grad.png", "images/elise-dang-flat-portrait-deepblue.png"],
-    coderGallery = ["images/elise-dang-photo-coder-hackathon.png", "images/elise-dang-photo-coder-gracehopper.png", "images/elise-dang-flat-coder2-white.png"],
-    leaderGallery = ["images/elise-dang-photo-leader-girlswhocode-aligned.png", "images/elise-dang-photo-leader-girlswhocode2-aligned.png", "images/elise-dang-flat-leader2-white.png"],
+    eliseGallery = ["images/elise-dang-photo-portrait-grad.png", "images/elise-dang-photo-portrait-snaphq.png", "images/elise-dang-flat-portrait-deepblue.png"],
+    coderGallery = ["images/elise-dang-photo-coder-hackathon.png", "images/elise-dang-photo-coder-lahacks2017.png", "images/elise-dang-photo-coder-gracehopper.png", "images/elise-dang-flat-coder2-white.png"],
+    leaderGallery = ["images/elise-dang-photo-leader-girlswhocode.png", "images/elise-dang-photo-leader-icsday.png", "images/elise-dang-photo-leader-girlswhocode2.png", "images/elise-dang-flat-leader2-white.png"],
     creatorGallery = ["images/elise-dang-photo-creator-studio-ghibli.png", "images/elise-dang-creator-icssc-pokemon-ad.png", "images/elise-dang-flat-creator2-white.png"],
-    explorerGallery = ["images/elise-dang-photo-explorer-vietnam.png", "images/elise-dang-photo-explorer-sanfran.png", "images/elise-dang-flat-explorer.png"];
+    explorerGallery = ["images/elise-dang-photo-explorer-vietnam.png", "images/elise-dang-photo-explorer-sanfran.png", "images/elise-dang-photo-explorer-grandcanyon.png", "images/elise-dang-flat-explorer.png"];
 
     $(function() {
       $('#eliseGraphic, #elisePopup').click(function() {
