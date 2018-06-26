@@ -12,16 +12,18 @@
 		<!-- ===== CSS ===== -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> <!-- Bootstrap -->
 		<link rel='stylesheet' type="text/css" href='css/style.css'> <!-- linking the stylesheet to HTML doc -->
+		<link rel='stylesheet' type="text/css" href='css/jquery-ui.min.css'>
 
 		<!-- ===== FONTS ===== -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 		<!-- <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet"> -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"> <!-- using Font Awesome icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- using Font Awesome icons -->
 
 		<!-- ===== SCRIPTS ===== -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
 		<script src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
 		<script src="js/script.js" type="text/javascript"></script>
 		<script>
@@ -55,8 +57,11 @@
 
 				<div class="row">
 
-					<div class="col-lg-3 col-md-3 col-sm-10 col-xs-11 center-when-s">
-						<img class="img-responsive" src="images/elise-dang-flat-portrait-deepblue.png" onmouseover="this.src='images/elise-dang-photo-portrait-grad.png'" onmouseout="this.src='images/elise-dang-flat-portrait-deepblue.png'"></img>
+					<div class="col-lg-3 col-md-3 col-sm-10 col-xs-11 center-when-s hover-launch" id="eliseStory">
+						<img class="img-responsive" src="images/elise-dang-flat-portrait-deepblue.png" id="eliseGraphic"/>
+						<div class="popup">
+							Click here to view Story!
+						</div>
 					</div>
 
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 white">
@@ -68,7 +73,7 @@
 							as I can remember, spending my youth researching the latest gadgets and creating
 							board games for my family to enjoy. My hobbies growing up have led me to a love
 							for <b>coding</b>, an outlet that has allowed me to express myself in various
-							ways. Aside from coding, I also enjoy writing, drawing, and exploring new places. Feel free to hover over each graphic to see additional photos!
+							ways. Aside from coding, I also enjoy writing, drawing, and exploring new places. <u>Click on each graphic (created by yours truly) to view its story/additional photos!</u>
 							<ul class="list-inline social-icon">
 								<li><a href='https://www.linkedin.com/in/elisedang'><i class="fa fa-linkedin"></i></a></li>
 								<li><a href='https://twitter.com/elisedang'><i class="fa fa-twitter"></i></a></li>
@@ -96,13 +101,18 @@
 
 				<div class= "row">
 
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-11 center-when-xs">
-						<img class="img-responsive img-hover" src="images/elise-dang-flat-coder2-white.png" onmouseover="this.src='images/elise-dang-photo-coder-hackathon.png'" onmouseout="this.src='images/elise-dang-flat-coder2-white.png'"></img>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-11 center-when-xs hover-launch" id="coderStory">
+						<img class="img-responsive" src="images/elise-dang-flat-coder2-white.png" id="coderGraphic"/>
+						<div class="popup">
+							Click here to view Story!
+						</div>
 					</div>
 					<div class="col-lg-8 col-md-6 col-sm-6 col-xs-12">
 						<h2>Coder</h2>
 						<p class="caption">
-							I am an avid <b>coder</b> who has experience in Python, Java, and C++. I enjoy learning new programming languages and working on projects with my friends. One of the greatest things about coding to me is that it has many facets—there is so much out there to explore.
+							I am an avid <b>coder</b> who has experience in Python, Java, C++, and Android development. I love learning new programming languages and delving deep into their documention, but I enjoy the social side of coding too!
+							Working on projects with my friends and participating in hackathons has made me more passionate about programming. When I'm surrounded by other people coding all sorts of cool projects, it inspires me to want to refine my technical skills.
+							I also enjoy attending tech conferences and hearing what my peers have to say about tech and the industry.
 						</p>
 					</div>
 
@@ -111,15 +121,18 @@
 				<div class= "row">
 
 					<!-- Remember, mobile first! -->
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-11 col-lg-push-8 col-md-push-6 col-sm-push-6 center-when-xs">
-						<img class="img-responsive img-hover" src="images/elise-dang-flat-leader2-white.png" onmouseover="this.src='images/elise-dang-photo-girlswhocode-aligned.png'" onmouseout="this.src='images/elise-dang-flat-leader2-white.png'"></img>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-11 col-lg-push-8 col-md-push-6 col-sm-push-6 center-when-xs hover-launch" id="leaderStory">
+						<img class="img-responsive" src="images/elise-dang-flat-leader2-white.png" id="leaderGraphic"/>
+						<div class="popup">
+							Click here to view Story!
+						</div>
 					</div>
 
 						<div class="col-lg-8 col-md-6 col-sm-6 col-xs-12 col-lg-pull-3 col-md-pull-3 col-sm-pull-6">
 							<h2>Leader</h2>
 							<p class="caption">
 								I served as secretary of <b>Information & Computer Sciences Student Council</b> at my university, working on a team to create and host tech-related events. These range across hackathons, seminars, socials, and everything in between. I was also a <b>Girls Who Code</b> facilitator,
-								teaching high school females how to program and introducing them to the tech industry (one of the ways was a field trip to Google).
+								teaching high school females how to program and introducing them to the tech industry (one of the ways was a field trip to Google!). My goal is to encourage those underrepresented to pursue a career in tech.
 							</p>
 						</div>
 
@@ -127,13 +140,17 @@
 
 				<div class= "row">
 
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-11 center-when-xs">
-						<img class="img-responsive img-hover" src="images/elise-dang-flat-creator2-white.png" onmouseover="this.src='images/elise-dang-studio-ghibli-grad-cap.png'" onmouseout="this.src='images/elise-dang-flat-creator2-white.png'"></img>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-11 center-when-xs hover-launch" id="creatorStory">
+						<img class="img-responsive" src="images/elise-dang-flat-creator2-white.png" id="creatorGraphic"/>
+						<div class="popup">
+							Click here to view Story!
+						</div>
 					</div>
 					<div class="col-lg-8 col-md-6 col-sm-6 col-xs-12">
 						<h2>Creator</h2>
 						<p class="caption">
-							I love making things (which explains my fondness for coding). As a child, I would write stories about life and my dogs for hours in my bedroom. I also enjoy drawing, exploring new medias, and creating <b>digital art</b>, such as the graphics on this website. I hope to create something that has a lasting impact on the world.
+							I love making things (which explains my fondness for coding). As a child, I would write stories about life and my dogs for hours in my bedroom. I also enjoy drawing, exploring new medias, and creating <b>digital art</b>, such as the graphics on this website.
+							I hope to create something that has a lasting, positive impact on the world!
 						</p>
 					</div>
 
@@ -141,8 +158,11 @@
 
 				<div class= "row">
 
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-11 col-lg-push-8 col-md-push-6 col-sm-push-6 center-when-xs">
-						<img class="img-responsive img-hover" src="images/elise-dang-flat-explorer.png" onmouseover="this.src='images/elise-dang-photo-explorer-sanfran.png'" onmouseout="this.src='images/elise-dang-flat-explorer.png'"></img>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-11 col-lg-push-8 col-md-push-6 col-sm-push-6 center-when-xs hover-launch" id="explorerStory">
+						<img class="img-responsive" src="images/elise-dang-flat-explorer.png" id="explorerGraphic"/>
+						<div class="popup">
+							Click here to view Story!
+						</div>
 					</div>
 
 						<div class="col-lg-8 col-md-6 col-sm-6 col-xs-12 col-lg-pull-3 col-md-pull-3 col-sm-pull-6">

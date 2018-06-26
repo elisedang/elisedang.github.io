@@ -27,8 +27,16 @@ body {
 
 body:after {
  display:none;
- content: url(http://dangelise.com/images/elise-dang-studio-ghibli-grad-cap.png) url(http://dangelise.com/images/elise-dang-photo-portrait-grad.png)
- url(http://dangelise.com/images/elise-dang-photo-girlswhocode-aligned.png) url(http://dangelise.com/images/elise-dang-photo-coder-hackathon.png)
+ content: url(http://dangelise.com/images/elise-dang-photo-portrait-grad.png)
+
+  url(http://dangelise.com/images/elise-dang-photo-coder-hackathon.png)
+	url(http://dangelise.com/images/elise-dang-photo-girlswhocode-aligned.png)
+	url(http://dangelise.com/images/elise-dang-photo-leader-girlswhocode2-aligned.png)
+
+	url(http://dangelise.com/images/elise-dang-photo-creator-studio-ghibli.png)
+	url(http://dangelise.com/images/elise-dang-creator-icssc-pokemon-ad.png)
+
+
  url(http://dangelise.com/images/elise-dang-photo-explorer-sanfran.png);
 }
 
@@ -85,11 +93,24 @@ b {
 }
 
 .img-responsive {
+}
+
+.hover-launch {
 	margin-top: 35px;
 }
 
-.jumbotron {
-	background-color: white;
+.popup {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	color: #444;
+	font-weight: bold;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
@@ -227,14 +248,3 @@ section#foot p {
 	  margin-right: auto;
 	}
 }
-
-/*img.img-hover {
-	-webkit-transition: margin 0.5s ease-out;
-	-moz-transition: margin 0.5s ease-out;
-	-o-transition: margin 0.5s ease-out;
-}
-
-img.img-hover:hover {
-	cursor:pointer;
-	margin-top: 5px;
-}*/

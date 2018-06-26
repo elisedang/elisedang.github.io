@@ -32,4 +32,141 @@ $(document).ready(function(){
            'scrollTop': targetOffset
        }, 1200, 'swing');
    });
+
+   $(document).ready(function() {
+     $(".img-responsive").effect("bounce", {times:3, distance:10}, 600);
+});
   });
+
+  var eliseCounter = 0, coderCounter = 0, leaderCounter = 0, creatorCounter = 0, explorerCounter = 0,
+    eliseGallery = ["images/elise-dang-photo-portrait-grad.png", "images/elise-dang-flat-portrait-deepblue.png"],
+    coderGallery = ["images/elise-dang-photo-coder-hackathon.png", "images/elise-dang-photo-coder-gracehopper.png", "images/elise-dang-flat-coder2-white.png"],
+    leaderGallery = ["images/elise-dang-photo-leader-girlswhocode-aligned.png", "images/elise-dang-photo-leader-girlswhocode2-aligned.png", "images/elise-dang-flat-leader2-white.png"],
+    creatorGallery = ["images/elise-dang-photo-creator-studio-ghibli.png", "images/elise-dang-creator-icssc-pokemon-ad.png", "images/elise-dang-flat-creator2-white.png"],
+    explorerGallery = ["images/elise-dang-photo-explorer-sanfran.png", "images/elise-dang-flat-explorer.png"];
+
+    $(function() {
+      $('#eliseGraphic').click(function() {
+        document.getElementById("eliseGraphic").src = eliseGallery[eliseCounter];
+        eliseCounter++;
+        if (eliseCounter >= eliseGallery.length) {
+            eliseCounter = 0;
+        }
+      });
+  });
+
+  $(function() {
+    $('#coderGraphic').click(function() {
+      document.getElementById("coderGraphic").src = coderGallery[coderCounter];
+      coderCounter++;
+      if (coderCounter >= coderGallery.length) {
+          coderCounter = 0;
+      }
+    });
+});
+
+$(function() {
+  $('#leaderGraphic').click(function() {
+    document.getElementById("leaderGraphic").src = leaderGallery[leaderCounter];
+    leaderCounter++;
+    if (leaderCounter >= leaderGallery.length) {
+        leaderCounter = 0;
+    }
+  });
+});
+
+$(function() {
+  $('#creatorGraphic').click(function() {
+    document.getElementById("creatorGraphic").src = creatorGallery[creatorCounter];
+    creatorCounter++;
+    if (creatorCounter >= creatorGallery.length) {
+        creatorCounter = 0;
+    }
+  });
+});
+
+$(function() {
+  $('#explorerGraphic').click(function() {
+    document.getElementById("explorerGraphic").src = explorerGallery[explorerCounter];
+    explorerCounter++;
+    if (explorerCounter >= explorerGallery.length) {
+        explorerCounter = 0;
+    }
+  });
+});
+
+var firstClickAlreadyElise = false;
+var firstClickAlreadyCoder = false;
+var firstClickAlreadyLeader = false;
+var firstClickAlreadyCreator = false;
+var firstClickAlreadyExplorer = false;
+
+$(function() {
+    $('.hover-launch').mouseenter(function() {
+      $(this).effect("bounce", { times:1, direction:"up", distance:10}, 300);
+      if ($(this).attr('id') == "eliseStory" && !firstClickAlreadyElise) {
+        $(this).find('.img-responsive').stop(true, false).animate({"opacity": .2});
+        $(this).find(".popup").show();
+      } else if  ($(this).attr('id') == "coderStory" && !firstClickAlreadyCoder) {
+        $(this).find('.img-responsive').stop(true, false).animate({"opacity": .2});
+        $(this).find(".popup").show();
+      } else if  ($(this).attr('id') == "leaderStory" && !firstClickAlreadyLeader) {
+        $(this).find('.img-responsive').stop(true, false).animate({"opacity": .2});
+        $(this).find(".popup").show();
+      } else if  ($(this).attr('id') == "creatorStory" && !firstClickAlreadyCreator) {
+        $(this).find('.img-responsive').stop(true, false).animate({"opacity": .2});
+        $(this).find(".popup").show();
+      } else if  ($(this).attr('id') == "explorerStory" && !firstClickAlreadyExplorer) {
+        $(this).find('.img-responsive').stop(true, false).animate({"opacity": .2});
+        $(this).find(".popup").show();
+      }
+  }).mouseleave(function() {
+    $(this).find('.img-responsive').animate({"opacity": 1});
+    $(".popup").hide();
+  });
+});
+
+$(function() {
+  $('.hover-launch').click(function() {
+    if ($(this).attr('id') == "eliseStory" && !firstClickAlreadyElise) {
+      firstClickAlreadyElise = true;
+      $(this).find('.img-responsive').stop().animate({"opacity": 1, "duration": 0});
+      $(this).find(".popup").hide();
+    } else if  ($(this).attr('id') == "coderStory" && !firstClickAlreadyCoder) {
+      firstClickAlreadyCoder = true;
+      $(this).find('.img-responsive').stop().animate({"opacity": 1, "duration": 0});
+      $(this).find(".popup").hide();
+    } else if  ($(this).attr('id') == "leaderStory" && !firstClickAlreadyLeader) {
+      firstClickAlreadyLeader = true;
+      $(this).find('.img-responsive').stop().animate({"opacity": 1, "duration": 0});
+      $(this).find(".popup").hide();
+    } else if  ($(this).attr('id') == "creatorStory" && !firstClickAlreadyCreator) {
+      firstClickAlreadyCreator = true;
+      $(this).find('.img-responsive').stop().animate({"opacity": 1, "duration": 0});
+      $(".popup").hide();
+    } else if  ($(this).attr('id') == "explorerStory" && !firstClickAlreadyExplorer) {
+      firstClickAlreadyExplorer = true;
+      $(this).find('.img-responsive').stop().animate({"opacity": 1, "duration": 0});
+      $(this).find(".popup").hide();
+    }
+  });
+});
+
+// $(function() {
+//   $('.hover-launch').one('mouseenter', function() {
+//     $(this).find('.img-responsive').stop().animate({"opacity": .4});
+//     $(".popup").show();
+// })
+// .one('mouseleave', function() {
+//     $(this).find('.img-responsive').animate({"opacity": 1});
+//     $(".popup").hide();
+// });
+// });
+//
+//
+// $(function() {
+//   $('.img-responsive').one('click', function() {
+//     $(this).animate({"opacity": 1, "duration": 0});
+//     $(".popup").hide();
+//   });
+// });
