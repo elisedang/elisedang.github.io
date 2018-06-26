@@ -102,7 +102,7 @@ var firstClickAlreadyCreator = false;
 var firstClickAlreadyExplorer = false;
 
 $(function() {
-    $('.hover-launch').mouseenter(function() {
+    $('.hover-launch').on("touchstart mouseenter", function() {
       $(this).effect("bounce", { times:1, direction:"up", distance:10}, 300);
       if ($(this).attr('id') == "eliseStory" && !firstClickAlreadyElise) {
         $(this).find('.img-responsive').stop(true, false).animate({"opacity": .2});
@@ -120,7 +120,7 @@ $(function() {
         $(this).find('.img-responsive').stop(true, false).animate({"opacity": .2});
         $(this).find(".popup").show();
       }
-  }).mouseleave(function() {
+  }).on("touchend mouseleave", function() {
     $(this).find('.img-responsive').animate({"opacity": 1});
     $(".popup").hide();
   });
