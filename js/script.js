@@ -46,7 +46,7 @@ $(document).ready(function(){
     explorerGallery = ["images/elise-dang-photo-explorer-vietnam.png", "images/elise-dang-photo-explorer-sanfran.png", "images/elise-dang-flat-explorer.png"];
 
     $(function() {
-      $('#eliseGraphic').click(function() {
+      $('#eliseGraphic, #elisePopup').click(function() {
         document.getElementById("eliseGraphic").src = eliseGallery[eliseCounter];
         eliseCounter++;
         if (eliseCounter >= eliseGallery.length) {
@@ -56,7 +56,7 @@ $(document).ready(function(){
   });
 
   $(function() {
-    $('#coderGraphic').click(function() {
+    $('#coderGraphic, #coderPopup').click(function() {
       document.getElementById("coderGraphic").src = coderGallery[coderCounter];
       coderCounter++;
       if (coderCounter >= coderGallery.length) {
@@ -66,7 +66,7 @@ $(document).ready(function(){
 });
 
 $(function() {
-  $('#leaderGraphic').click(function() {
+  $('#leaderGraphic, #leaderPopup').click(function() {
     document.getElementById("leaderGraphic").src = leaderGallery[leaderCounter];
     leaderCounter++;
     if (leaderCounter >= leaderGallery.length) {
@@ -76,7 +76,7 @@ $(function() {
 });
 
 $(function() {
-  $('#creatorGraphic').click(function() {
+  $('#creatorGraphic, #creatorPopup').click(function() {
     document.getElementById("creatorGraphic").src = creatorGallery[creatorCounter];
     creatorCounter++;
     if (creatorCounter >= creatorGallery.length) {
@@ -86,7 +86,7 @@ $(function() {
 });
 
 $(function() {
-  $('#explorerGraphic').click(function() {
+  $('#explorerGraphic, #explorerPopup').click(function() {
     document.getElementById("explorerGraphic").src = explorerGallery[explorerCounter];
     explorerCounter++;
     if (explorerCounter >= explorerGallery.length) {
